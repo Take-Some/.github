@@ -1,109 +1,62 @@
-# Kayla's Systems
+# Take Some() Entertainment
 
-> Engineering deterministic systems.
-> Building modular worlds.
+Welcome to **Take Some() Entertainment**, an independent game studio dedicated to empowering creators and developers to build extraordinary experiences. Our philosophy is rooted in freedom, modularity, and innovation, emphasizing tools that adapt to the vision of the developer, not the other way around.
 
----
+## Our Mission
+
+* Provide a modular, AAA-level engine called **NewEngine** that allows developers to create without limitations.
+* Cultivate a studio environment where creativity, collaboration, and craftsmanship drive every decision.
+* Foster an open culture where experimentation and innovation are celebrated.
+
+## Repositories
+
+### NewEngine
+
+The core of our technology, built with modularity in mind:
+
+* `engine-core` — ECS core, gateway, AssetManager
+* `engine-render` — Rendering, PostFX, shaders
+* `engine-physics` — Physics adapters and simulation
+* `engine-audio` — Audio systems and events
+
+### SampleGames
+
+Demonstration projects that showcase the engine’s capabilities:
+
+* `demo-open-world` — Test open-world environment
+* `demo-ai` — Showcase AI systems and behaviors
+
+### Tools
+
+Developer utilities to streamline creation:
+
+* `asset-pipeline` — Import/export models and textures
+* `shader-registry` — Manage shaders and effects
+
+### Documentation
+
+Comprehensive resources for developers:
+
+* `architecture` — Overview of gateways and module structure
+* `getting-started` — Setup guide for new contributors
+* `contributing` — Guidelines and workflow for contributions
+
+## Teams
+
+* **Engine Team** — Core engine development
+* **Gameplay Team** — Sample projects and gameplay systems
+* **Tools Team** — SDK and developer tools
+* **Docs Team** — Documentation and guides
+* **Art Team** — Concept art, UI/UX, logos
 
 ## Philosophy
 
-Kayla's Systems designs high-discipline software architectures with:
+We believe in **engine as host, feature as plugin**. Every system is modular, replaceable, and designed to be extended. Developers should be empowered to implement their vision fully, with minimal constraints from the engine itself.
 
-* Deterministic execution
-* Strict ABI contracts
-* Plugin-first extensibility
-* Minimal hardcoding
-* Maximum composability
+## Contribution
 
-Core mindset:
+We welcome contributions from developers and artists who share our vision. Please refer to each repository’s `contributing.md` for guidance on workflow, coding standards, and pull requests.
 
-```
-Contract > Implementation
-Host > Services
-Determinism > Implicit Magic
-Modularity > Monolith
-```
+## License
 
----
-
-## Flagship Project — NewEngine
-
-### Architectural Principle
-
-```
-Engine as Host
-Service as Plugin
-```
-
-The engine does not own functionality.
-It orchestrates capabilities dynamically registered by modules.
-
-### Design Properties
-
-* Runtime plugin loading
-* ABI-stable boundaries
-* Capability negotiation
-* Schema-driven configuration
-* Deterministic math layer
-* No implicit global state
-
----
-
-## Engineering Principles
-
-### 1. Determinism
-
-* Explicit state transitions
-* Predictable execution order
-* Stable iteration models
-* Reproducible builds and runtime behavior
-
-### 2. Modularity
-
-* Runtime plugins
-* Importer plugins
-* Capability descriptors
-* Replaceable subsystems
-
-### 3. Contract-Oriented Design
-
-* Configuration as part of ABI contract
-* Strict initialization flow
-* No hidden dependencies
-* Clear lifecycle boundaries
-
-### 4. AAA Architecture Discipline
-
-* Render Graph mindset
-* Feature registration model
-* Simulation / Render separation
-* Tooling as first-class system
-
----
-
-## Structural Overview
-
-```
-KaylasSystems/
-├── newengine-core
-├── newengine-plugin-api
-├── newengine-math
-├── newengine-render
-├── newengine-modules-*
-├── editor
-└── tools
-```
-
----
-
-## Long-Term Objective
-
-Build a modular, extensible, AAA-ready platform capable of evolving without architectural rewrites.
-
-The mission is not just to ship code.
-The mission is to engineer systems that remain coherent under long-term expansion.
-
----
-
-**Kayla's Systems**
-Engineering Deterministic Worlds.
+Take Some() Entertainment operates under the MIT License. Please see the `LICENSE` file for details.
