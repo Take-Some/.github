@@ -1,4 +1,4 @@
-# Take Some() Entertainment
+# Take Some() Technologies
 
 <p align="center">
   <img
